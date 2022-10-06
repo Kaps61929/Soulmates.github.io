@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Login / Sign Up Form</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <script src="https://kit.fontawesome.com/1788c719dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/register.css">
+    <link rel="stylesheet" href="/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="title_bar">
+        <h1 style="font-size:50px;font-family: 'Dancing Script', cursive;position:relative;left:39px;bottom:9px;">
+          Soulmates<h1><br>
+            <span
+              style="position: relative;font-size:50px;font-family: 'Dancing Script', cursive;font-size: 18px;right:120px;top:2px">
+              where made in heavens becomes reality</span>
+    </div> 
+
+    </div>
+    <div class="container" style="position: relative;top: 20px;left:420px;background-image: url(background_login.jpg);">
+        <form class="form" id="login" action="/login" method="post">
+            <h1 class="form__title">Login</h1>
+
+            <div class="form__input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" class="form__input" autofocus placeholder="email" name="email_id">
+
+            </div>
+            <div class="form__input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" class="form__input" autofocus placeholder="Password" name="password">
+
+            </div>
+            <button class="form__button" type="submit" style="background-color: rgb(255, 133, 133) ;">Login</button>
+        </form>
+         {{#if message}}
+      <h4 class="alert alert-danger mt-4" style="
+    background: #eeeeee;color: red;font: 500 1rem 'Quicksand', sans-serif;">{{message}}</h4>
+      {{/if}}
+    </div>
+</body>
+</html>

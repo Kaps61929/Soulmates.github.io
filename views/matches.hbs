@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soulmates</title>
+  <link rel="stylesheet" href="/home.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="title_bar">
+    <h1 style="font-size:50px;font-family: 'Dancing Script', cursive;position:relative;left:39px;bottom:-27px;">
+      Soulmates<h1><br>
+        <span
+          style="position: relative;font-size:50px;font-family: 'Dancing Script', cursive;font-size: 18px;right:120px;top:9px">
+          where made in heavens becomes reality</span>
+
+
+  </div>
+
+  <br><br>
+  
+
+
+
+
+  <br><br><br>
+  <hr>
+
+  <h3 style="color: rgb(255, 133, 133);font:'Quicksand', sans-serif;margin-left:540px">Matches:</h3>
+  <br>
+  <div class="col-6" style="margin-left:300px;">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          
+            <div class="card" style="width:100%; background-image: url(profileimg.jpg);">
+
+
+            <img src="next_card.png" class="userimg" style="width: 150px;height:150px;">
+
+
+            <div class="card-body">
+             
+              <p class="card-text"><h4><span style="color:white;">PLs press on next button to see your matches</span></h4></p>
+            
+            </div>
+            
+
+          </div>
+          
+        </div>
+        {{#each data}}
+        <div class="carousel-item">
+          <div class="card" style="width:100%; background-image: url(profileimg2.jpg);">
+
+
+            <img src="/{{this.photo}}" class="userimg" style="width: 150px;height:150px;">
+
+
+            <div class="card-body">
+              <p class="card-text"  style="color:white"> Hi i am <span style="color: rgb(255, 133, 133);">{{this.name}} ,
+                  {{this.age}} yrs</span> !</p>
+              <p class="card-text"  style="color:white">{{this.height}}mts ,{{this.occupation}}</p>
+              <p class="card-text"  style="color:white"> About myself :- <span style="color: rgb(255, 133, 133);">{{this.about_me}}</span></p>
+            </div>
+
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+
+
+<hr>
+<br>
+ 
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

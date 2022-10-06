@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <title>Soulmates</title>
+
+   <link rel="stylesheet" href="/home.css">
+</head>
+
+<body style="display:inline;margin:0%">
+  <div class="title_bar">
+    <h1 style="font-size:50px;font-family: 'Dancing Script', cursive;position: relative;left:39px;bottom:9px;">
+      Soulmates<h1><br>
+        <span
+          style="position: relative;font-size:50px;font-family: 'Dancing Script', cursive;font-size: 18px;right:120px;top:9px">
+          where made in heavens becomes reality</span>
+
+  </div>
+  
+  <div class="container"  style="background-image: url(/background1.jpg);">
+    <div class="container_regform">
+      <form class="form" id="createAccount" action="/register" method="POST">
+        <h1 class="form__title" style="font-family:'Quicksand', sans-serif;">Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+          <input type="text" id="name" class="form__input" autofocus placeholder="Name" name="name"required>
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__select">
+          <label>Gender : </label>
+            
+          <select class ="select" name="gender" style="margin-right: 9px;width: 36% ;height:36px;margin-left: 9px;"required>
+            
+            <option class ="form__input-group" value="Male">Male</option>
+            <option  class ="form__input-group" value="Female" selected>Female</option>
+            <option  class ="form__input-group" value="Other" selected>Other</option>
+            <option  class ="form__input-group" value="" disabled selected hidden>Select an option</option>
+            </select>
+        </div><br>
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="date_of_birth" style="margin-right: 9px;width: 50% ;height:36px;margin-left: 9px;background-color: #f5f4f4;border: none;";required >
+
+        <div class="form__input-group">
+          <input type="text" class="form__input" autofocus placeholder="Email Address" name ="email_id"required>
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input type="text" class="form__input" autofocus placeholder="Mobile Number" name="phone_no"required>
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input type="password" class="form__input" autofocus placeholder="Password" name="password"required>
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input type="password" class="form__input" autofocus placeholder="Confirm Password" name="confirmpassword"required>
+          <div class="form__input-error-message"></div>
+        </div>
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <button class="form_button" type="submit" name="register">Register</button>
+        <p class="form__text">
+          <a class="form__link" href="/login" id="linkLogin">Already have an account? Sign in</a>
+        </p>
+       
+      </form>
+       {{#if message}}
+      <h4 class="alert alert-danger mt-4" style="color: red;font: 500 1rem 'Quicksand', sans-serif;
+    background: #eeeeee;">{{message}}</h4>
+      {{/if}}
+    </div>
+    
+   
+  </div>
+  <br><br> <br>
+  <div class="container">
+  <h1  style="margin-left:360px;font-family:'Quicksand', sans-serif;color:rgb(255, 179, 108)"> Why choose Soulmates ?</h1>
+  <img src="/rooterimg.jpg" style="margin-left:72px;">
+</div>
+<br><br>
+<hr>
+<br>
+<div class="container">
+  <h1  style="margin-left:410px;font-family:'Quicksand', sans-serif;color:rgb(255, 133, 133);"> Matched by Soulmates</h1>
+  <img src="/matchedby.jpg" style="margin-left:21 px;">
+</div>
+<hr>
+  <br>
+  <br>
+  <br><br>
+  
+  <footer  style="background-color:rgb(0, 6, 58);margin-bottom:-108px;position:relative;vottom:-18px;padding:18px">
+  <h2 style="margin-left:18px;font-family:'Quicksand', sans-serif;color:#cccccc">About Soulmates.com</h2>
+  <p style="margin-left:18px;font-family:'Quicksand', sans-serif;color:#cccccc">soulmates.com is one of India’s leading matrimonial websites that has helped lakhs of members find their perfect life partner.</p>
+  <p style="margin-left:18px;font-family:'Quicksand', sans-serif;color:#cccccc" >We believe choosing a life partner is a big and important decision, and hence work towards giving a simple and secure matchmaking experience for you and your family.<br> Each profile registered with us goes through a manual screening process before going live on site; we provide superior privacy controls for Free; and also verify contact information of members.</p>   
+  <p style="margin-left:18px;font-family:'Quicksand', sans-serif;color:#cccccc">You can register for Free and search according to your specific criteria on age, height, community, profession, income, location and much more- on your computer, tablet or mobile. Regular custom mails and notifications make the process easier and take you closer to your Soulmate !</p>
+ 
+ </footer>
+</body>
+
+</html>

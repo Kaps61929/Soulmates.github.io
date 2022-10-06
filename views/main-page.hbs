@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soulmates</title>
+  <link rel="stylesheet" href="/home.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="title_bar">
+    <h1 style="font-size:50px;font-family: 'Dancing Script', cursive;position:relative;left:39px;bottom:-27px;">
+      Soulmates<h1><br>
+        <span
+          style="position: relative;font-size:50px;font-family: 'Dancing Script', cursive;font-size: 18px;right:120px;top:9px">
+          where made in heavens becomes reality</span>
+
+
+        <span class="navbar_content" id="home" onclick="window.location='/'" style="margin-left:270px;">
+          Home
+        </span>
+        <span class="navbar_content" id="My_profile" onclick="window.location='/myprofile'">
+          My profile
+        </span>
+        <span class="navbar_content" id="Desired_partner" onclick="window.location='/desired'">
+
+          Desired Partner
+        </span>
+       
+        <span class="navbar_content" id="change_password" onclick="window.location='/matches'">
+          Matches
+        </span>
+      
+
+        <span class="navbar_content" id="Sign_out" onclick="window.location='/logout'">
+          Sign out
+        </span>
+  </div>
+
+  <br><br>
+  <div class="card" style="width:50%;margin-left:18px">
+    {{#each result}}
+    {{#if this.photo}}
+    <img src="/{{this.photo}}" alt="Card image cap" class="userimg" style="margin-left:9px;">
+    {{else}}
+    <img src="/defaultimg.jpg" alt="Card image cap" class="userimg" style="margin-left:9px;">
+    {{/if}}
+    <p class="card-text">
+    <h5>Hi {{this.name}} pls fill all detail to get a more compatible partner</h5>
+    </p>
+    {{/each}}
+
+  </div>
+
+
+
+
+  <br><br><br>
+  <hr>
+
+  <h3 style="color: rgb(255, 133, 133);font:'Quicksand', sans-serif;margin-left:480px">Profile To Look for:</h3>
+  <br>
+  <div class="col-6" style="margin-left:300px;">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          {{#each result}}
+            <div class="card" style="width:100%; background-image: url(profileimg.jpg);">
+
+
+            <img src="next_card.png" class="userimg" style="width: 150px;height:150px;">
+
+
+            <div class="card-body">
+              <p class="card-text"><h3 style="color: white;">Hi  <span style="color: rgb(255, 133, 133);">{{this.name}} </h3> </p>
+                  <p class="card-text"><span style="color: rgb(255, 133, 133);">{{this.height}}mts ,{{this.age}}yrs
+                 , {{this.occupation}}</p>
+              <p class="card-text"><h3><span style="color:white;">PLs press on next button to see profiles</span></3></p>
+            
+            </div>
+            
+
+          </div>
+          {{/each}}
+        </div>
+        {{#each data}}
+        <div class="carousel-item">
+          <div class="card" style="width:100%; background-image: url(profileimg.jpg);">
+
+
+            <img src="/{{this.photo}}" class="userimg" style="width: 150px;height:150px;">
+
+
+            <div class="card-body">
+              <p class="card-text" style="color: white;">Hi i am  <span style="color: rgb(255, 133, 133);">  {{this.name}} ,
+                  {{this.age}} yrs</span> !</p>
+              <p class="card-text"><span style="color: rgb(255, 133, 133);">{{this.height}}mts ,
+                  {{this.occupation}}</p>
+              <p class="card-text"> <span style="color: rgb(255, 133, 133);">About myself :-
+                  {{this.about_me}}</p>
+            </div>
+
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+
+<br>
+<hr>
+
+ 
+
+
+  <footer  style="background-color:rgb(0, 6, 58);margin-bottom:-108px;position:relative;vottom:-18px;padding:18px">
+  <h2 style="margin-left:18px;font-family:'Quicksand', sans-serif;color:#cccccc">About Soulmates.com</h2>
+  <p style="margin-left:18px;font-family:'Quicksand', sans-serif;color:#cccccc">soulmates.com is one of India’s leading matrimonial websites that has helped lakhs of members find their perfect life partner.</p>
+  <p style="margin-left:18px;font-family:'Quicksand', sans-serif;color:#cccccc" >We believe choosing a life partner is a big and important decision, and hence work towards giving a simple and secure matchmaking experience for you and your family.<br> Each profile registered with us goes through a manual screening process before going live on site; we provide superior privacy controls for Free; and also verify contact information of members.</p>   
+  <p style="margin-left:18px;font-family:'Quicksand', sans-serif;color:#cccccc">You can register for Free and search according to your specific criteria on age, height, community, profession, income, location and much more- on your computer, tablet or mobile. Regular custom mails and notifications make the process easier and take you closer to your Soulmate !</p>
+ 
+ </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+.title_nav{
+   
+    
+    color:white;
+    
+  }
+.title_bar{
+display: flex;
+background-color:rgb(0, 9, 17);
+width:initial;
+margin-bottom:33.5px;
+color: rgb(255, 133, 133);
+height: 120px
+}
+
+.container_regform {
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #ffffff;
+    display: inline-block;
+    
+}
+
+
+
+.form__title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success {
+    color: var(--color-success);
+}
+
+.form__message--error {
+    color: var(--color-error);
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+    margin-top:1rem;
+}
+.form_select{
+  width:370px;margin:auto;
+  
+  padding:10px;
+  font: 500 1rem 'Quicksand', sans-serif;
+}
+.form-control{
+  
+  padding:5px;
+}
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+.form__input:focus {
+    border-color: var(--color-primary);
+    background: #ffffff;
+}
+
+.form__input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form_button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background-color:rgb(255, 133, 133) ;
+}
+
+.form__button:hover {
+    background: var(--color-primary-dark);
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+.form__link:hover {
+    text-decoration: underline;
+}
+
+.container_regform{
+    position: relative;
+    left: 780px;
+    
+}
+.container{
+    position: relative;
+    top:-33px;
+}
+body{
+    display: inline;
+}
+.navbar_content{
+    font: 500 1rem 'Quicksand', sans-serif; 
+    margin-left: 36px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+.userimg{
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0), 0 6px 36px rgba(0, 0 ,0, 0.13);
+    border: 3px solid #fff;
+}
